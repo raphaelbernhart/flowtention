@@ -1,0 +1,29 @@
+@import _var
+
+body.block-body
+    background-color: $mc
+    margin: 0
+
+    .container
+        margin: 0 auto
+        max-width: 780px
+
+    .main
+        align-items: center
+        display: flex
+        height: 100vh
+        text-align: center
+        .logo-header
+            img
+                max-width: 300px
+                width: 100%
+        h1
+            letter-spacing: 4px
+            margin-bottom: 0
+        .bmc-button
+            margin-top: 1rem!important
+
+@media screen and ( max-width: 1140px )
+    .container
+        padding: 0 30px
+        width: 100%
