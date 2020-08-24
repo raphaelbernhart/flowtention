@@ -1,0 +1,73 @@
+@import _var
+
+.popup-body
+    background-color: #F7F7F7
+    margin: 0
+    height: 500px
+    min-width: 295px
+    *
+        box-sizing: border-box
+        font-synthesis: none
+        -moz-font-feature-settings: 'kern'
+        -webkit-font-smoothing: antialiased
+        -moz-osx-font-smoothing: grayscale
+    .header
+        background-color: white
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08)
+        padding: 2px
+        h1
+            color: $mc
+            font-family: $mf
+            font-size: 1rem
+            font-weight: 400
+            font-style: normal
+            text-align: center
+    .active-tab
+        background-color: $mc
+        padding: 15px 20px
+        cursor: pointer
+        &:hover
+            background-color: $err
+        h2
+            color: white
+            display: inline-block
+            font-weight: 300
+            margin: 0
+        svg
+            display: inline-block
+            fill: white
+            float: right
+            height: 21px
+            width: 25px
+    nav
+        background-color: white
+        bottom: 0px
+        box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.08)
+        display: flex
+        justify-content: space-between
+        padding: 15px 40px
+        position: fixed
+        width: 100%
+        svg
+            cursor: pointer
+            fill: $lightBlue
+            height: 24px
+            width: 24px
+            &:hover
+                fill: $mc
+            &.active
+                fill: $mc
+    main
+        height: 70%
+        text-align: center
+        svg
+            cursor: pointer
+            fill: $mc
+            &:hover
+                fill: $err
+        h2
+            color: $mc
+            font-size: 1.7rem
+            font-weight: 300
+            margin: 0
+            margin-top: 15px

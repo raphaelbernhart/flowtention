@@ -1,14 +1,33 @@
 @import _var
 @import first-run
+@import popup
+@import block
 
 *
     box-sizing: border-box
+
+.hide
+    display: none!important
+
+.flex
+    display: flex!important
+    &.center-vertical
+        align-items: center 
+    &.center-horizontal
+        justify-content: center
 
 h1
     color: white
     font-family: $mf
     font-size: 3rem
     font-style: italic
+    font-weight: 600
+    text-align: center
+
+h3
+    color: $mc
+    font-family: $mf
+    font-size: 1.5rem
     font-weight: 600
     text-align: center
 
